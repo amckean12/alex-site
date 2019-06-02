@@ -1,44 +1,29 @@
-body {
-  font-family: "Oswald", sans-serif;
-  line-height: 1.25;
-  margin: 0;
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+
+
+body{
+  background-color: #98B6D4
 }
 
-.nav-bar h1 {
-  float: left;
-  font-family: "Oswald", sans-serif;
-  line-height: 1.25;
-  color: #8bc34a;
-  margin: 1%;
+.App {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
 }
 
-.nav-bar {
-  background-color: #384150;
-  padding: 2em;
+.App h1{
+  text-align: center;
+  font-size: 85px;
+  padding-top: 12%;
+}
+
+.App h2{
   text-align: center;
 }
 
-.nav-bar ul {
-  padding: 0;
-}
-
-.nav-bar li {
-  display: inline-block;
-  font-size: 1.5em;
-  padding: .25em 1em;
-  text-transform: uppercase;
-}
-
-.nav-bar li:not(:last-child) {
-  border-right: 1px solid #666;
-}
-
-.nav-bar a {
-  border-bottom: 3px solid #666;
-  color: #ccc;
-  text-decoration: none;
-}
-
-.nav-bar a:hover {
-  border-bottom: 3px solid #8bc34a;
+.App li {
+  padding-right: 2%;
+  float: right; /* makes list horizontal */
+  list-style-type: none;
+  margin: 0 0 0 30px; /* separates 'buttons' */
+  font-size: 23px;
 }

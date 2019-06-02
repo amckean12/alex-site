@@ -1,35 +1,50 @@
 import React from 'react';
+import './App.css'
 
+//Font Awesome Imports
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
+//React Router
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
-//Component Inputs
-import PortfolioContainer from './containers/portfolio-container'
-import BlogContainer from './containers/blog-container'
-import AboutContainer from './containers/about-container'
-import ContactContainer from './containers/contact-container'
 
 //Styling Inputs
 import './App.css'
 
+//Components
+import BlogContainer from './containers/blog-container'
+
+const linkStyles = {
+  textDecoration: 'none',
+  'font-family': 'Source Sans Pro',
+  color: 'white'
+}
+
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <nav className="nav-bar">
-          <h1>AJ</h1>
-          <ul>
-            <li><Link to='/'>About</Link></li>
-            <li><Link to='/portfolio'>Portfolio</Link></li>
-            <li><Link to='/blog'>Blog</Link></li>
-            <li>><Link to='/contact'>Contact</Link></li>
-          </ul>
-        </nav>
-        <Route path='/' exact component={AboutContainer} />
-        <Route path='/portfolio' component={PortfolioContainer} />
-        <Route path='/blog' component={BlogContainer} />
-        <Route path='/contact' component={ContactContainer} />
-      </div>
-  </Router>
+      <Router>
+        <div className="App">
+          <nav>
+            <ul>
+              <li>
+                <Link to='/portfolio' style={linkStyles}>Portfolio</Link>
+              </li>
+              <li>
+                <Link to='/blog' style={linkStyles}>Blog</Link>
+              </li>
+              <li>
+                <Link to='/' style={linkStyles}>Home</Link>
+              </li>
+            </ul>
+          </nav>
+          <Route path="/blog/" component={BlogContainer} />
+          <h1>Hello, I'm Alex!</h1>
+          <h2>Full Stack Developer | Blogger | Always Learning</h2>
+          <a href="https://github.com/amckean12"></a>
+          <a href="https://www.linkedin.com/in/alex-mckean/"></a>
+        </div>
+      </Router>
   );
 }
 
