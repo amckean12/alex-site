@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 //Components
 import BlogContainer from './containers/blog-container'
 import SplashContainer from './containers/splash-container'
-
-import './App.css'
+import PortfolioContainer from './containers/portfolio-container'
 
 //Font Awesome Imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -31,13 +30,9 @@ class App extends Component {
     if (this.props.currentRoute === "/"){
       return (<SplashContainer/>)
     }
-    if (this.props.currentRoute === "blog"){
+    if (this.props.currentRoute === "/blog"){
       return (<BlogContainer/>)
     }
-  }
-
-  handleClick(event){
-    console.log("hello")
   }
 
   render() {
@@ -47,13 +42,13 @@ class App extends Component {
           <nav>
             <ul>
               <li>
-                <Link to='/portfolio' style={linkStyles}>Portfolio</Link>
+                <Link to='/portfolio' style={linkStyles} onClick={this.props.addPortRoute}>Portfolio</Link>
               </li>
               <li>
-                <Link to='/blog' style={linkStyles} onClick={(event) => this.handleClick(event)} value="blog">Blog</Link>
+                <Link to='/blog' style={linkStyles} onClick={this.props.addBlogRoute}>Blog</Link>
               </li>
               <li>
-                <Link to='/' style={linkStyles} onClick={(event) => this.handleClick(event)} value="home">Home</Link>
+                <Link to='/' style={linkStyles} onClick={this.props.addHomeRoute}>Home</Link>
               </li>
             </ul>
           </nav>
@@ -70,4 +65,10 @@ const mapStateToProps = route => {
  })
 }
 
-export default connect(mapStateToProps, null)(App);
+const mapDispatchToProps = dispatch => ({
+  addHomeRoute: route => dispatch({type: "ADD_HOME_ROUTE", route}),
+  addBlogRoute: route => dispatch({type: "ADD_BLOG_ROUTE", route}),
+  addPortRoute: route => dispatch({type: "ADD_PORT_ROUTE", route})
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
