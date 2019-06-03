@@ -13,6 +13,10 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 //React Router
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
+//Redux Imports
+
+import { connect } from 'react-redux'
+
 //Styling Inputs
 import './App.css'
 const linkStyles = {
@@ -22,23 +26,18 @@ const linkStyles = {
 }
 
 class App extends Component {
-  state = {
-    renderComponent: "home"
-  }
 
   componentDidUpdate(){
-    if (this.state.renderComponent === "home"){
-      return (<SplashContainer  renderComponent={this.state.renderComponent}/>)
+    if (this.props.currentRoute === "/"){
+      return (<SplashContainer/>)
     }
-    if (this.state.renderComponent === "blog"){
-      return (<BlogContainer renderComponent={this.state.renderComponent}/>)
+    if (this.props.currentRoute === "blog"){
+      return (<BlogContainer/>)
     }
   }
 
   handleClick(event){
-    this.setState({
-        renderComponent: event.target.value
-      })
+    console.log("hello")
   }
 
   render() {
@@ -58,11 +57,17 @@ class App extends Component {
               </li>
             </ul>
           </nav>
-          {this.componentDidUpdate()}
+          { this.componentDidUpdate() }
         </Router>
       </div>
     );
   }
 }
 
-export default App;
+const mapStateToProps = route => {
+ return({
+   currentRoute: route.routeReducer.route
+ })
+}
+
+export default connect(mapStateToProps, null)(App);
