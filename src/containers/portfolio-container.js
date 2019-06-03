@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
 
+//Components
+import ProjectComponent from '../components/portfolio-project'
+
+//Styling
+import '../portfolio.css'
+
 class PortfolioContainer extends Component {
    render(){
      return(
-       <div>
-        Portfolio
+       <div className="Portfolio-Container">
+        <ProjectComponent />
        </div>
      )
    }

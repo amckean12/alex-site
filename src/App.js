@@ -33,6 +33,9 @@ class App extends Component {
     if (this.props.currentRoute === "/blog"){
       return (<BlogContainer/>)
     }
+    if (this.props.currentRoute === "/portfolio"){
+      return (<PortfolioContainer/>)
+    }
   }
 
   render() {
