@@ -4,13 +4,8 @@ import BlogContainer from './containers/blog-container'
 import SplashContainer from './containers/splash-container'
 import PortfolioContainer from './containers/portfolio-container'
 
-//Font Awesome Imports
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-
 //React Router
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 //Redux Imports
 
