@@ -27,3 +27,7 @@ body{
   margin: 0 0 0 30px; /* separates 'buttons' */
   font-size: 23px;
 }
+
+.App li:hover {
+  font-size: 28px;
+}

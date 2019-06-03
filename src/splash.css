@@ -1,0 +1,26 @@
+.social-icon-link-github{
+  font-size: 40px;
+  color: white;
+  padding-right: 2%;
+  padding-top: 2%;
+}
+
+.social-icon-container {
+  width: 100%;
+  text-align: center;
+}
+
+.social-icon-link-linkedin{
+  font-size: 40px;
+  color: white;
+  padding-left: 2%;
+  padding-top: 2%;
+}
+
+.social-icon-link-github:hover{
+  font-size: 45px;
+}
+
+.social-icon-link-linkedin:hover{
+  font-size: 45px;
+}

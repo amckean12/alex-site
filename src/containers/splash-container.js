@@ -1,4 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import '../splash.css'
 
 class SplashContainer extends Component {
    render(){
@@ -6,9 +9,11 @@ class SplashContainer extends Component {
        <div className="splash-container">
          <h1>Hello, I'm Alex!</h1>
          <h2>Full Stack Developer | Blogger | Always Learning</h2>
-         <a href="https://github.com/amckean12"></a>
-         <a href="https://www.linkedin.com/in/alex-mckean/"></a>
-       </div>
+         <div className="social-icon-container">
+          <a href="https://github.com/amckean12" className="social-icon-link-github"><FontAwesomeIcon icon={faGithub}/></a>
+          <a href="https://www.linkedin.com/in/alex-mckean/" className="social-icon-link-linkedin"><FontAwesomeIcon icon={faLinkedin}/></a>
+        </div>
+      </div>
      )
    }
 }
