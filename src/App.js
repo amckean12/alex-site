@@ -21,17 +21,17 @@ const linkStyles = {
 
 class App extends Component {
 
-  componentDidUpdate(){
-    if (this.props.currentRoute === "/"){
-      return (<SplashContainer/>)
-    }
-    if (this.props.currentRoute === "/blog"){
-      return (<BlogContainer/>)
-    }
-    if (this.props.currentRoute === "/portfolio"){
-      return (<PortfolioContainer/>)
-    }
-  }
+  // componentDidUpdate(){
+  //   if (this.props.currentRoute === "/"){
+  //     return (<SplashContainer/>)
+  //   }
+  //   if (this.props.currentRoute === "/blog"){
+  //     return (<BlogContainer/>)
+  //   }
+  //   if (this.props.currentRoute === "/portfolio"){
+  //     return (<PortfolioContainer/>)
+  //   }
+  // }
 
   render() {
     return (
@@ -50,7 +50,8 @@ class App extends Component {
               </li>
             </ul>
           </nav>
-          { this.componentDidUpdate() }
+          <SplashContainer />
+          <PortfolioContainer />
         </Router>
       </div>
     );

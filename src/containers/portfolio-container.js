@@ -11,6 +11,7 @@ class PortfolioContainer extends Component {
      return(
        <div className="Portfolio-Container">
         <ProjectComponent />
+        <ProjectComponent />
        </div>
      )
    }

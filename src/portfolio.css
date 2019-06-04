@@ -1,0 +1,18 @@
+.Portfolio-Container{
+  width: 100%;
+  background-color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #98B6D4;
+  height: 100vh;
+}
+
+.project-image{
+  width: 30%;
+  height: 50vh;
+  float: left;
+}
+
+.project-info{
+  width: 70%;
+  height: 50vh;
+}
