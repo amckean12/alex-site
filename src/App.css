@@ -21,7 +21,7 @@ body{
   text-align: center;
 }
 
-.App li {
+.App nav li {
   padding-right: 2%;
   float: right; /* makes list horizontal */
   list-style-type: none;
@@ -29,6 +29,6 @@ body{
   font-size: 23px;
 }
 
-.App li:hover {
+.App nav li:hover {
   font-size: 28px;
 }
