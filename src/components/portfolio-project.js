@@ -1,4 +1,5 @@
 import React from 'react'
+import ProjectImageComponent from './project-image-component.js'
 import '../portfolio.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -6,7 +7,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 const ProjectComponent = (props) => (
   <div className="project-component">
     <div className={`project-image`}>
-      Hi
+      <ProjectImageComponent />
     </div>
     <div className={`project-info`}>
       <h2>{props.title}</h2>

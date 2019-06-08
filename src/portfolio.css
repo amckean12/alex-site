@@ -49,3 +49,12 @@
 .project-link-container a:hover{
   font-size: 45px;
 }
+
+.project-image-slideshow {
+  margin: auto;
+  position: relative;
+  width: 90%;
+  height: 90%;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
