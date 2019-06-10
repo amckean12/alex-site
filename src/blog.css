@@ -13,8 +13,9 @@
 }
 
 .blog-index{
-  width: 100%;
-  float: left;
+  padding-top: 7%;
+  position: relative;
+  width: 40%;
   padding-left: 2%;
   padding-right: 2%;
 }
@@ -26,7 +27,8 @@
 
 .blog-index li{
   list-style-type: none;
-  font-size: 25px;
+  font-size: 20px;
+  width: 100%;
 }
 
 .blog-index li:hover{
@@ -34,26 +36,19 @@
 }
 
 .blog-component{
-  z-index: 1;
-  width: 80%;
-  min-height: 480px;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25),
-			0 10px 10px rgba(0,0,0,0.22);
+  width: 50%;
+  float: right;
   border-radius: 10px;
   background-color: white;
-  margin: auto;
   color: #98B6D4;
 }
 
 .blog-component h3{
-  padding-left: 3%;
-  padding-top: 2%;
   font-size: 35px;
   text-decoration: underline;
 }
 
 .blog-component button{
-  z-index: 2;
   margin-left: 94%;
   margin-top: 2.5%;
 }

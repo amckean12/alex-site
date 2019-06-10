@@ -61,7 +61,7 @@ class BlogContainer extends Component {
              </li>
            </ul>
          </div>
-         { this.renderedBlog() }
+         {this.renderedBlog()}
        </div>
      )
    }

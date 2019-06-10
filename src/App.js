@@ -29,13 +29,13 @@ class App extends Component {
           <nav>
             <ul>
               <li>
-                <Link to='Portfolio-Container' spy={true} smooth={true} offset={-70} duration={550} style={linkStyles}>Portfolio</Link>
+                <Link to='Portfolio-Container' spy={true} smooth={true} offset={-80} duration={550} style={linkStyles}>Portfolio</Link>
               </li>
               <li>
-                <Link to='blog-container' spy={true} smooth={true} offset={-70} duration={550} style={linkStyles}>Blog</Link>
+                <Link to='blog-container' spy={true} smooth={true} duration={550} style={linkStyles}>Blog</Link>
               </li>
               <li>
-                <Link to='splash-container' spy={true} smooth={true} offset={-70} duration={550} style={linkStyles}>Home</Link>
+                <Link to='splash-container' spy={true} smooth={true} duration={550} style={linkStyles}>Home</Link>
               </li>
             </ul>
           </nav>
