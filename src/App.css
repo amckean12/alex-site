@@ -26,9 +26,15 @@ body{
   float: right; /* makes list horizontal */
   list-style-type: none;
   margin: 0 0 0 30px; /* separates 'buttons' */
-  font-size: 23px;
+  font-size: 25px;
 }
 
 .App nav li:hover {
-  font-size: 28px;
+  font-size: 30px;
+}
+
+.Navigation-Wrapper{
+  width: 100%;
+  top: 0;
+  position: fixed;
 }

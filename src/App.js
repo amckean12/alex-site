@@ -4,8 +4,9 @@ import BlogContainer from './containers/blog-container'
 import SplashContainer from './containers/splash-container'
 import PortfolioContainer from './containers/portfolio-container'
 
-//React Router
-import { BrowserRouter as Router, Link } from "react-router-dom";
+//React Scroll
+import * as Scroll from 'react-scroll';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 //Redux Imports
 
@@ -21,38 +22,26 @@ const linkStyles = {
 
 class App extends Component {
 
-  // componentDidUpdate(){
-  //   if (this.props.currentRoute === "/"){
-  //     return (<SplashContainer/>)
-  //   }
-  //   if (this.props.currentRoute === "/blog"){
-  //     return (<BlogContainer/>)
-  //   }
-  //   if (this.props.currentRoute === "/portfolio"){
-  //     return (<PortfolioContainer/>)
-  //   }
-  // }
-
   render() {
     return (
       <div className="App">
-        <Router>
+        <div className="Navigation-Wrapper">
           <nav>
             <ul>
               <li>
-                <Link to='/portfolio' style={linkStyles} onClick={this.props.addPortRoute}>Portfolio</Link>
+                <Link to='Portfolio-Container' spy={true} smooth={true} offset={-70} duration={550} style={linkStyles}>Portfolio</Link>
               </li>
               <li>
-                <Link to='/blog' style={linkStyles} onClick={this.props.addBlogRoute}>Blog</Link>
+                <Link to='/blog' style={linkStyles}>Blog</Link>
               </li>
               <li>
-                <Link to='/' style={linkStyles} onClick={this.props.addHomeRoute}>Home</Link>
+                <Link to='splash-container' spy={true} smooth={true} offset={-70} duration={550} style={linkStyles}>Home</Link>
               </li>
             </ul>
           </nav>
+        </div>
           <SplashContainer />
           <PortfolioContainer />
-        </Router>
       </div>
     );
   }
