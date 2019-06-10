@@ -11,7 +11,11 @@ class BlogContainer extends Component {
   }
 
   renderedBlog = () => {
-    return( <Blog title={this.state.currentBlogTitle}/>)
+    if (this.state.currentBlogTitle !== ""){
+      return( <Blog title={this.state.currentBlogTitle}/>)
+    }else{
+      return ("")
+    }
   }
 
    render(){
@@ -32,6 +36,9 @@ class BlogContainer extends Component {
              </li>
              <li>
                <p>Nested Attributes in Forms</p>
+             </li>
+             <li>
+               <p>Implementing a Login/Signup Sliding Box</p>
              </li>
              <li>
                <p>Setting up Fullstack App Part 1- Rails API</p>

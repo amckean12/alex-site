@@ -32,3 +32,23 @@
 .blog-index li:hover{
   font-size: 28px;
 }
+
+.blog-component{
+  z-index: 1;
+  width: 80%;
+  min-height: 480px;
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+			0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 10px;
+  background-color: white;
+  margin: auto;
+  color: #98B6D4;
+}
+
+.blog-component h3{
+  padding-left: 2%;
+  padding-top: 2%;
+  font-size: 35px;
+  text-decoration: underline;
+}
