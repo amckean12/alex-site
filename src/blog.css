@@ -21,6 +21,7 @@
 
 .blog-index h3{
   font-size: 30px;
+  text-decoration: underline;
 }
 
 .blog-index li{
