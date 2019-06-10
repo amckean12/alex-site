@@ -22,3 +22,12 @@
 .blog-index h3{
   font-size: 30px;
 }
+
+.blog-index li{
+  list-style-type: none;
+  font-size: 25px;
+}
+
+.blog-index li:hover{
+  font-size: 28px;
+}

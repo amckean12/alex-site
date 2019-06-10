@@ -7,6 +7,9 @@ import { whatIveLearned } from '../blogs/what-ive-learned.js'
 
 class BlogContainer extends Component {
    render(){
+     const renderBlogBox = () =>{
+       console.log("Hello")
+     }
      return(
        <div className="blog-container">
          <h2>Dev. Blog</h2>
