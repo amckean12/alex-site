@@ -37,7 +37,6 @@
   z-index: 1;
   width: 80%;
   min-height: 480px;
-  position: relative;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25),
 			0 10px 10px rgba(0,0,0,0.22);
   border-radius: 10px;
@@ -51,4 +50,10 @@
   padding-top: 2%;
   font-size: 35px;
   text-decoration: underline;
+}
+
+.blog-component button{
+  z-index: 2;
+  margin-left: 94%;
+  margin-top: 2.5%;
 }
