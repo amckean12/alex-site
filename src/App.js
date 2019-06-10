@@ -32,7 +32,7 @@ class App extends Component {
                 <Link to='Portfolio-Container' spy={true} smooth={true} offset={-70} duration={550} style={linkStyles}>Portfolio</Link>
               </li>
               <li>
-                <Link to='/blog' style={linkStyles}>Blog</Link>
+                <Link to='blog-container' spy={true} smooth={true} offset={-70} duration={550} style={linkStyles}>Blog</Link>
               </li>
               <li>
                 <Link to='splash-container' spy={true} smooth={true} offset={-70} duration={550} style={linkStyles}>Home</Link>
@@ -42,6 +42,7 @@ class App extends Component {
         </div>
           <SplashContainer />
           <PortfolioContainer />
+          <BlogContainer />
       </div>
     );
   }
