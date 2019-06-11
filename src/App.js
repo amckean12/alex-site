@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 //Components
-import BlogContainer from './containers/blog-container'
 import SplashContainer from './containers/splash-container'
 import PortfolioContainer from './containers/portfolio-container'
 
 //React Scroll
-import * as Scroll from 'react-scroll';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link } from 'react-scroll'
 
 //Redux Imports
 
@@ -32,7 +30,7 @@ class App extends Component {
                 <Link to='Portfolio-Container' spy={true} smooth={true} offset={-80} duration={550} style={linkStyles}>Portfolio</Link>
               </li>
               <li>
-                <Link to='blog-container' spy={true} smooth={true} duration={550} style={linkStyles}>Blog</Link>
+                <a href="https://dev.to/amckean12">Blog</a>
               </li>
               <li>
                 <Link to='splash-container' spy={true} smooth={true} duration={550} style={linkStyles}>Home</Link>
@@ -42,7 +40,6 @@ class App extends Component {
         </div>
           <SplashContainer />
           <PortfolioContainer />
-          <BlogContainer />
       </div>
     );
   }

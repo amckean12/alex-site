@@ -1,8 +1,8 @@
 .Portfolio-Container{
   width: 100%;
-  background-color: #98B6D4;
+  background-color: white;
   font-family: 'Source Sans Pro', sans-serif;
-  color: white;
+  color: #98B6D4;
   height: 100vh;
 }
 
@@ -42,7 +42,7 @@
 
 .project-link-container a{
   font-size: 40px;
-  color: white;
+  color: #98B6D4;
 }
 
 
