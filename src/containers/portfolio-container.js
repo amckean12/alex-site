@@ -9,13 +9,13 @@ class PortfolioContainer extends Component {
   handleClick = (event) => {
     if (event.currentTarget.id.includes("live demo")){
       if (event.currentTarget.id === "live demo Piatto"){
-        console.log("you clicked the piatto one")
+        window.open("https://piatto-client.herokuapp.com/")
       } else if (event.currentTarget.id === "live demo My Portfolio Site"){
-        console.log("you clicked the portfolio one")
+        alert("Hi, welcome to my site!")
       }
     } else if(event.currentTarget.id.includes("images")){
       if (event.currentTarget.id === "images Piatto"){
-        console.log("you clicked piatto images")
+        console.log("Air")
       } else if (event.currentTarget.id === "images My Portfolio Site"){
         console.log("you clicked the portfolio images")
       }
