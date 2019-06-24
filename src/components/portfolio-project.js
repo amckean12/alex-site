@@ -7,7 +7,9 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 const ProjectComponent = (props) => (
   <div className="project-component">
     <div className={`project-info`}>
-      <h2>{props.title}</h2>
+      <div className="project-title">
+        <h2>{props.title}</h2>
+      </div>
       <p>Tech Used:<span>{props.techUsed}</span></p>
       <p>About: <span>{props.about}</span></p>
       <div className="key-features">
@@ -18,7 +20,9 @@ const ProjectComponent = (props) => (
         </ul>
       </div>
       <div className="project-link-container">
+        <button onClick={props.handleClick} id={`live demo ${props.title}`}>Live Demo</button>
         <a href={props.link}><FontAwesomeIcon icon={faGithub}/></a>
+        <button onClick={props.handleClick} id={`images ${props.title}`}>Images</button>
       </div>
     </div>
   </div>

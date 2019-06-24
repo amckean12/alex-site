@@ -6,8 +6,20 @@ import ProjectComponent from '../components/portfolio-project'
 import '../portfolio.css'
 
 class PortfolioContainer extends Component {
-  handleClick = () => {
-    console.log("Button clicked")
+  handleClick = (event) => {
+    if (event.currentTarget.id.includes("live demo")){
+      if (event.currentTarget.id === "live demo Piatto"){
+        console.log("you clicked the piatto one")
+      } else if (event.currentTarget.id === "live demo My Portfolio Site"){
+        console.log("you clicked the portfolio one")
+      }
+    } else if(event.currentTarget.id.includes("images")){
+      if (event.currentTarget.id === "images Piatto"){
+        console.log("you clicked piatto images")
+      } else if (event.currentTarget.id === "images My Portfolio Site"){
+        console.log("you clicked the portfolio images")
+      }
+    }
   }
 
    render(){
