@@ -13,12 +13,6 @@ class PortfolioContainer extends Component {
       } else if (event.currentTarget.id === "live demo My Portfolio Site"){
         alert("Hi, welcome to my site!")
       }
-    } else if(event.currentTarget.id.includes("images")){
-      if (event.currentTarget.id === "images Piatto"){
-        console.log("Air")
-      } else if (event.currentTarget.id === "images My Portfolio Site"){
-        console.log("you clicked the portfolio images")
-      }
     }
   }
 

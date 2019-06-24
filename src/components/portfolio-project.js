@@ -1,5 +1,4 @@
 import React from 'react'
-import ProjectImageComponent from './project-image-component.js'
 import '../portfolio.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -22,7 +21,6 @@ const ProjectComponent = (props) => (
       <div className="project-link-container">
         <button onClick={props.handleClick} id={`live demo ${props.title}`}>Live Demo</button>
         <a href={props.link}><FontAwesomeIcon icon={faGithub}/></a>
-        <button onClick={props.handleClick} id={`images ${props.title}`}>Images</button>
       </div>
     </div>
   </div>
