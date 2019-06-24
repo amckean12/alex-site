@@ -6,9 +6,6 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const ProjectComponent = (props) => (
   <div className="project-component">
-    <div className={`project-image`}>
-      <ProjectImageComponent />
-    </div>
     <div className={`project-info`}>
       <h2>{props.title}</h2>
       <p>Tech Used:<span>{props.techUsed}</span></p>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 //Components
 import ProjectComponent from '../components/portfolio-project'
 
@@ -7,6 +6,10 @@ import ProjectComponent from '../components/portfolio-project'
 import '../portfolio.css'
 
 class PortfolioContainer extends Component {
+  handleClick = () => {
+    console.log("Button clicked")
+  }
+
    render(){
      return(
        <div className="Portfolio-Container">
@@ -16,6 +19,7 @@ class PortfolioContainer extends Component {
           techUsed="Javascript | Ruby | React | Redux | Rails | Knock | HTML | CSS | PostgreSQL | Heroku | Git"
           keyfeatures={["JWT authentication for API access", "Nested Form Submission using ActiveRecord", "User Persistance with Redux-Persist", "Asynchronous web requests with Redux-Thunk"]}
           link = "https://github.com/amckean12/piatto-react"
+          handleClick = {this.handleClick}
           />
         <ProjectComponent
           title="My Portfolio Site"
@@ -23,6 +27,7 @@ class PortfolioContainer extends Component {
           techUsed="Javascript | React | Redux | HTML | CSS | Github Pages | Git"
           keyfeatures={["Minimal Design", "React-Scroll used for Navigation", "Responsive navigation links"]}
           link = "https://github.com/amckean12/alex-site.github.io"
+          handleClick = {this.handleClick}
           />
        </div>
      )
