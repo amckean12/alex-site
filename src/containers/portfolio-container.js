@@ -30,7 +30,7 @@ class PortfolioContainer extends Component {
         <ProjectComponent
           title="My Portfolio Site"
           about="This current site. I use this for my blog as well as displaying projects I've worked on."
-          techUsed="Javascript | React | Redux | HTML | CSS | Github Pages | Git"
+          techUsed="Javascript | React | Redux | HTML | CSS | Heroku | Git"
           keyfeatures={["Minimal Design", "React-Scroll used for Navigation", "Responsive navigation links"]}
           link = "https://github.com/amckean12/alex-site.github.io"
           handleClick = {this.handleClick}
