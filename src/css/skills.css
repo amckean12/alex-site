@@ -5,52 +5,221 @@
   padding-top: 1%;
 }
 
-.skill{
-  padding-top: 30px;
-  padding-bottom: 30px;
-  height: 10vh;
-  width: 25vw;
-  float: left;
+@media only screen and (min-width: 1100px){
+  .skill{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 10vh;
+    width: 25%;
+    float: left;
+  }
+
+  .skill h1{
+    color: #98B6D4;
+  }
+
+  .skills-content h2{
+    color: #98B6D4;
+    font-size: 35px;
+  }
+
+  .skill-icon{
+    color: #98B6D4;
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 2.5%;
+    float: left;
+  }
+
+  .skill-info{
+    float: left;
+    color: #98B6D4;
+    height: 100%;
+    width: 80%;
+  }
+
+  .skill-info p{
+    color: #98B6D4;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .skill-info h3{
+    color: #98B6D4;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
-.skill h1{
-  color: #98B6D4;
+@media only screen
+and (min-width: 880px)
+and (max-width: 1099px){
+  .skill{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 10vh;
+    width: 33.33%;
+    float: left;
+  }
+
+  .skill h1{
+    color: #98B6D4;
+  }
+
+  .skills-content h2{
+    color: #98B6D4;
+    font-size: 35px;
+  }
+
+  .skill-icon{
+    color: #98B6D4;
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 2.5%;
+    float: left;
+  }
+
+  .skill-info{
+    float: left;
+    color: #98B6D4;
+    height: 100%;
+    width: 80%;
+  }
+
+  .skill-info p{
+    color: #98B6D4;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .skill-info h3{
+    color: #98B6D4;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
-.skills-content h2{
-  color: #98B6D4;
-  font-size: 35px;
+@media only screen
+and (min-width: 500px)
+and (max-width: 879px){
+  .skills-content{
+    background-color: #FFFAFA;
+    height: 155vh;
+    width: 100%;
+    padding-top: 1%;
+  }
+
+  .skill{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 10vh;
+    width: 50%;
+    float: left;
+  }
+
+  .skill h1{
+    color: #98B6D4;
+  }
+
+  .skills-content h2{
+    color: #98B6D4;
+    font-size: 35px;
+  }
+
+  .skill-icon{
+    color: #98B6D4;
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 2.5%;
+    float: left;
+  }
+
+  .skill-info{
+    float: left;
+    color: #98B6D4;
+    height: 100%;
+    width: 80%;
+  }
+
+  .skill-info p{
+    color: #98B6D4;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .skill-info h3{
+    color: #98B6D4;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
-.skill-icon{
-  color: #98B6D4;
-  height: 100%;
-  width: 20%;
-  text-align: center;
-  font-size: 40px;
-  padding-top: 2.5%;
-  float: left;
-}
+@media only screen and (max-width: 499px){
+  .skill{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 10vh;
+    width: 100%;
+    float: left;
+  }
 
-.skill-info{
-  float: left;
-  color: #98B6D4;
-  height: 100%;
-  width: 80%;
-}
+  .skill h1{
+    color: #98B6D4;
+  }
 
-.skill-info p{
-  color: #98B6D4;
-  text-align: center;
-  font-size: 20px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+  .skills-content h2{
+    color: #98B6D4;
+    font-size: 35px;
+  }
 
-.skill-info h3{
-  color: #98B6D4;
-  text-align: center;
-  font-size: 20px;
-  margin-top: 0;
-  margin-bottom: 0;
+  .skill-icon{
+    color: #98B6D4;
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 2.5%;
+    float: left;
+  }
+
+  .skill-info{
+    float: left;
+    color: #98B6D4;
+    height: 100%;
+    width: 80%;
+  }
+
+  .skill-info p{
+    color: #98B6D4;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .skill-info h3{
+    color: #98B6D4;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
