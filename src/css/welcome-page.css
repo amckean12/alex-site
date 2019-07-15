@@ -1,0 +1,21 @@
+.welcome-component{
+    color: white; 
+}
+
+.welcome-component h1{
+  text-align: center;
+  font-size: 85px;
+  padding-top: 12%;
+}
+
+.welcome-component h2{
+  text-align: center;
+}
+
+.welcome-component li {
+  padding-right: 2%;
+  float: right; /* makes list horizontal */
+  list-style-type: none;
+  margin: 0 0 0 30px; /* separates 'buttons' */
+  font-size: 23px;
+}

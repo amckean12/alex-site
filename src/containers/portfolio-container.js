@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 import ProjectComponent from '../components/portfolio-project'
 
 //Styling
-import '../portfolio.css'
 
 class PortfolioContainer extends Component {
   handleClick = (event) => {

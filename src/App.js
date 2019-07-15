@@ -4,7 +4,6 @@ import SplashContainer from './containers/splash-container'
 import PortfolioContainer from './containers/portfolio-container'
 
 //React Scroll
-import { Link } from 'react-scroll'
 
 //Redux Imports
 
@@ -27,19 +26,24 @@ class App extends Component {
           <nav>
             <ul>
               <li>
-                <Link to='Portfolio-Container' spy={true} smooth={true} offset={-80} duration={550} style={linkStyles}>Portfolio</Link>
-              </li>
-              <li>
                 <a href="https://dev.to/amckean12">Blog</a>
               </li>
               <li>
-                <Link to='splash-container' spy={true} smooth={true} duration={550} style={linkStyles}>Home</Link>
+                Portfolio
+              </li>
+              <li>
+                Skills
+              </li>
+              <li>
+                Home
               </li>
             </ul>
           </nav>
         </div>
+        <div>
           <SplashContainer />
-          <PortfolioContainer />
+        </div>
+
       </div>
     );
   }
