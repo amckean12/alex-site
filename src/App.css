@@ -35,6 +35,7 @@ body{
 
 .Navigation-Wrapper{
   width: 100%;
+  background: #98B6D4;
   top: 0;
   position: fixed;
 }

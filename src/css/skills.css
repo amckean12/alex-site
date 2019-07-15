@@ -2,6 +2,7 @@
   background-color: #FFFAFA;
   height: 100vh;
   width: 100%;
+  padding-top: 1%;
 }
 
 .skill{
@@ -14,6 +15,11 @@
 
 .skill h1{
   color: #98B6D4;
+}
+
+.skills-content h2{
+  color: #98B6D4;
+  font-size: 35px;
 }
 
 .skill-icon{
