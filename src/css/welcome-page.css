@@ -1,5 +1,7 @@
 .welcome-component{
-    color: white; 
+    color: white;
+    height: 100%;
+    width: 100%;
 }
 
 .welcome-component h1{

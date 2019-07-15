@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 //Components
 import WelcomeContent from '../components/welcome-content'
+import PorfolioContent from '../components/portfolio-content'
+import SkillsContent from '../components/skills-content'
 
 //Styling
 import '../css/splash.css'
@@ -12,6 +14,8 @@ class SplashContainer extends Component {
      return(
        <div className="splash-container">
          <WelcomeContent />
+         <SkillsContent />
+         <PorfolioContent />
        </div>
      )
    }
